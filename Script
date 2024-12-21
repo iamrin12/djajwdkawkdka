@@ -1,0 +1,47 @@
+GameName = "FC Basel 1893 Clubhouse [Official]"
+
+tab1name = "Main"
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+
+local GameName = Library:NewWindow(GameName)
+
+local Tab1 = GameName:NewSection(tab1name)
+
+-- Buttons for UGC
+Tab1:CreateButton("UGC 1", function(value)
+    game:GetService("ReplicatedStorage").Packages._Index["sleitnick_knit@1.7.0"].knit.Services.Badge_Service.RF.GetUGC:InvokeServer(8)
+end)
+
+Tab1:CreateButton("UGC 2", function(value)
+    game:GetService("ReplicatedStorage").Packages._Index["sleitnick_knit@1.7.0"].knit.Services.Badge_Service.RF.GetUGC:InvokeServer(7)
+end)
+
+Tab1:CreateButton("UGC 3", function(value)
+    game:GetService("ReplicatedStorage").Packages._Index["sleitnick_knit@1.7.0"].knit.Services.Badge_Service.RF.GetUGC:InvokeServer(6)
+end)
+
+Tab1:CreateButton("UGC 4", function(value)
+    game:GetService("ReplicatedStorage").Packages._Index["sleitnick_knit@1.7.0"].knit.Services.Badge_Service.RF.GetUGC:InvokeServer(5)
+end)
+
+Tab1:CreateButton("UGC 5", function(value)
+    game:GetService("ReplicatedStorage").Packages._Index["sleitnick_knit@1.7.0"].knit.Services.Badge_Service.RF.GetUGC:InvokeServer(4)
+end)
+
+Tab1:CreateButton("UGC 6", function(value)
+    game:GetService("ReplicatedStorage").Packages._Index["sleitnick_knit@1.7.0"].knit.Services.Badge_Service.RF.GetUGC:InvokeServer(3)
+end)
+
+Tab1:CreateButton("UGC 7", function(value)
+    game:GetService("ReplicatedStorage").Packages._Index["sleitnick_knit@1.7.0"].knit.Services.Badge_Service.RF.GetUGC:InvokeServer(2)
+end)
+
+-- Tab 2 - Credits Section
+local Tab2 = GameName:NewSection("Credits: Raizen")
+
+-- Adding a Discord server link in Tab 2
+Tab2:CreateButton("Join our Discord", function(value)
+    setclipboard("https://discord.gg/QURQRjY2")
+    print("Discord invite link copied to clipboard!")
+end)
